@@ -94,7 +94,7 @@ const chords = [
   },
   {
     chord: "F⌀",
-    notes: ["F", "A♭", "B", "E♭"],
+    notes: ["F", "A♭", "C♭", "E♭"],
   },
   {
     chord: "G△7",
@@ -118,15 +118,11 @@ const chords = [
   },
   {
     chord: "A♭m7",
-    notes: ["A♭", "B", "E♭", "G♭"],
+    notes: ["A♭", "C♭", "E♭", "G♭"],
   },
   {
     chord: "A♭7",
     notes: ["A♭", "C", "E♭", "G♭"],
-  },
-  {
-    chord: "A♭⌀",
-    notes: ["A♭", "B", "D", "G♭"],
   },
   {
     chord: "B♭△7",
@@ -142,7 +138,7 @@ const chords = [
   },
   {
     chord: "B♭⌀",
-    notes: ["B♭", "D♭", "E", "A♭"],
+    notes: ["B♭", "D♭", "F♭", "A♭"],
   },
   {
     chord: "E♭△7",
@@ -157,24 +153,16 @@ const chords = [
     notes: ["E♭", "G", "B♭", "D♭"],
   },
   {
-    chord: "E♭⌀",
-    notes: ["E♭", "G♭", "A", "D♭"],
-  },
-  {
     chord: "D♭△7",
     notes: ["D♭", "F", "A♭", "C"],
   },
   {
     chord: "D♭m7",
-    notes: ["D♭", "E", "A♭", "B"],
+    notes: ["D♭", "F♭", "A♭", "C♭"],
   },
   {
     chord: "D♭7",
-    notes: ["D♭", "F", "A♭", "B"],
-  },
-  {
-    chord: "D♭⌀",
-    notes: ["D♭", "E", "G", "B"],
+    notes: ["D♭", "F", "A♭", "C♭"],
   },
   {
     chord: "G♭△7",
@@ -182,15 +170,15 @@ const chords = [
   },
   {
     chord: "G♭m7",
-    notes: ["G♭", "A", "D♭", "E"],
+    notes: ["G♭", "A", "D♭", "F♭"],
   },
   {
     chord: "G♭7",
-    notes: ["G♭", "B♭", "D♭", "E"],
+    notes: ["G♭", "B♭", "D♭", "F♭"],
   },
   {
     chord: "G♭⌀",
-    notes: ["G♭", "A", "C", "E"],
+    notes: ["G♭", "A", "C", "F♭"],
   },
   {
     chord: "C#△7",
