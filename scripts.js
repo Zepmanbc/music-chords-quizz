@@ -1,230 +1,4 @@
-// DATA
-const chords = [
-  {
-    chord: "C△7",
-    notes: ["C", "E", "G", "B"],
-  },
-  {
-    chord: "Cm7",
-    notes: ["C", "E♭", "G", "B♭"],
-  },
-  {
-    chord: "C7",
-    notes: ["C", "E", "G", "B♭"],
-  },
-  {
-    chord: "C⌀",
-    notes: ["C", "E♭", "G♭", "B♭"],
-  },
-  {
-    chord: "A△7",
-    notes: ["A", "C#", "E", "G#"],
-  },
-  {
-    chord: "Am7",
-    notes: ["A", "C", "E", "G"],
-  },
-  {
-    chord: "A7",
-    notes: ["A", "C#", "E", "G"],
-  },
-  {
-    chord: "A⌀",
-    notes: ["A", "C", "E♭", "G"],
-  },
-  {
-    chord: "B△7",
-    notes: ["B", "D#", "F#", "A#"],
-  },
-  {
-    chord: "Bm7",
-    notes: ["B", "D", "F#", "A"],
-  },
-  {
-    chord: "B7",
-    notes: ["B", "D#", "F#", "A"],
-  },
-  {
-    chord: "B⌀",
-    notes: ["B", "D", "F", "A"],
-  },
-  {
-    chord: "D△7",
-    notes: ["D", "F#", "A", "C#"],
-  },
-  {
-    chord: "Dm7",
-    notes: ["D", "F", "A", "C"],
-  },
-  {
-    chord: "D7",
-    notes: ["D", "F#", "A", "C"],
-  },
-  {
-    chord: "D⌀",
-    notes: ["D", "F", "A♭", "C"],
-  },
-  {
-    chord: "E△7",
-    notes: ["E", "G#", "B", "D#"],
-  },
-  {
-    chord: "Em7",
-    notes: ["E", "G", "B", "D"],
-  },
-  {
-    chord: "E7",
-    notes: ["E", "G#", "B", "D"],
-  },
-  {
-    chord: "E⌀",
-    notes: ["E", "G", "B♭", "D"],
-  },
-  {
-    chord: "F△7",
-    notes: ["F", "A", "C", "E"],
-  },
-  {
-    chord: "Fm7",
-    notes: ["F", "A♭", "C", "E♭"],
-  },
-  {
-    chord: "F7",
-    notes: ["F", "A", "C", "E♭"],
-  },
-  {
-    chord: "F⌀",
-    notes: ["F", "A♭", "C♭", "E♭"],
-  },
-  {
-    chord: "G△7",
-    notes: ["G", "B", "D", "F#"],
-  },
-  {
-    chord: "Gm7",
-    notes: ["G", "B♭", "D", "F"],
-  },
-  {
-    chord: "G7",
-    notes: ["G", "B", "D", "F"],
-  },
-  {
-    chord: "G⌀",
-    notes: ["G", "B♭", "D♭", "F"],
-  },
-  {
-    chord: "A♭△7",
-    notes: ["A♭", "C", "E♭", "G"],
-  },
-  {
-    chord: "A♭m7",
-    notes: ["A♭", "C♭", "E♭", "G♭"],
-  },
-  {
-    chord: "A♭7",
-    notes: ["A♭", "C", "E♭", "G♭"],
-  },
-  {
-    chord: "B♭△7",
-    notes: ["B♭", "D", "F", "A"],
-  },
-  {
-    chord: "B♭m7",
-    notes: ["B♭", "D♭", "F", "A♭"],
-  },
-  {
-    chord: "B♭7",
-    notes: ["B♭", "D", "F", "A♭"],
-  },
-  {
-    chord: "B♭⌀",
-    notes: ["B♭", "D♭", "F♭", "A♭"],
-  },
-  {
-    chord: "E♭△7",
-    notes: ["E♭", "G", "B♭", "D"],
-  },
-  {
-    chord: "E♭m7",
-    notes: ["E♭", "G♭", "B♭", "D♭"],
-  },
-  {
-    chord: "E♭7",
-    notes: ["E♭", "G", "B♭", "D♭"],
-  },
-  {
-    chord: "D♭△7",
-    notes: ["D♭", "F", "A♭", "C"],
-  },
-  {
-    chord: "D♭m7",
-    notes: ["D♭", "F♭", "A♭", "C♭"],
-  },
-  {
-    chord: "D♭7",
-    notes: ["D♭", "F", "A♭", "C♭"],
-  },
-  {
-    chord: "G♭△7",
-    notes: ["G♭", "B♭", "D♭", "F"],
-  },
-  {
-    chord: "G♭m7",
-    notes: ["G♭", "A", "D♭", "F♭"],
-  },
-  {
-    chord: "G♭7",
-    notes: ["G♭", "B♭", "D♭", "F♭"],
-  },
-  {
-    chord: "G♭⌀",
-    notes: ["G♭", "A", "C", "F♭"],
-  },
-  {
-    chord: "C#△7",
-    notes: ["C#", "E#", "G#", "B#"],
-  },
-  {
-    chord: "C#m7",
-    notes: ["C#", "E", "G#", "B"],
-  },
-  {
-    chord: "C#7",
-    notes: ["C#", "E#", "G#", "B"],
-  },
-  {
-    chord: "C#⌀",
-    notes: ["C#", "E", "G", "B"],
-  },
-  {
-    chord: "F#△7",
-    notes: ["F#", "A#", "C#", "E#"],
-  },
-  {
-    chord: "F#m7",
-    notes: ["F#", "A", "C#", "E"],
-  },
-  {
-    chord: "F#7",
-    notes: ["F#", "A#", "C#", "E"],
-  },
-  {
-    chord: "F#⌀",
-    notes: ["F#", "A", "C", "E"],
-  },
-  {
-    chord: "G#m7",
-    notes: ["G#", "B", "D#", "F#"],
-  },
-  {
-    chord: "G#7",
-    notes: ["G#", "B#", "D#", "F#"],
-  },
-  {
-    chord: "G#⌀",
-    notes: ["G#", "B", "D", "F#"],
-  },
-];
+import { chords } from "./chords.js";
 
 // STATE
 let current;
@@ -237,7 +11,7 @@ let correct = 0;
 let wrong = 0;
 
 // UI INIT
-function nextQuestion() {
+export function nextQuestion() {
   document.getElementById("result").innerText = "";
 
   selectedNotes = [];
@@ -254,9 +28,11 @@ function nextQuestion() {
 
 function renderOptions() {
   const notesGroups = [
+    ["A𝄫", "B𝄫", "C𝄫", "D𝄫", "E𝄫", "F𝄫", "G𝄫"],
     ["A♭", "B♭", "C♭", "D♭", "E♭", "F♭", "G♭"],
     ["A", "B", "C", "D", "E", "F", "G"],
-    ["A#", "B#", "C#", "D#", "E#", "F#", "G#"],
+    ["A♯", "B♯", "C♯", "D♯", "E♯", "F♯", "G♯"],
+    ["A𝄪", "B𝄪", "C𝄪", "D𝄪", "E𝄪", "F𝄪", "G𝄪"],
   ];
 
   // notes
@@ -294,7 +70,7 @@ function highlight(parent, selectedBtn) {
 }
 
 // VALIDATION
-function validate() {
+export function validate() {
   let ok = true;
   selectedNotes = [...new Set(selectedNotes)];
 
@@ -356,6 +132,13 @@ function showFeedback(success) {
     feedback.remove();
   }, 1000);
 }
+
+document
+  .querySelector("#btn-validate button")
+  .addEventListener("click", validate);
+document
+  .querySelector("#btn-nextQuestion button")
+  .addEventListener("click", nextQuestion);
 
 // START
 nextQuestion();
